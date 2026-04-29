@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import akshatImage from "@/akshat.png"
+import unitestImage from "@/unitest.jpg"
+import energyAdvisorImage from "@/energyadvisor.jpg"
 import {
   Moon,
   Sun,
@@ -213,116 +216,123 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "AI QUESTION PAPER GENERATOR",
-      subtitle: "AI-Driven Study Assistant",
+      title: "UniTest",
+      subtitle: "AI-based Assessment Platform",
       description:
-        "Developed an AI-driven study assistant that generates personalized questions based on a given topic or uploaded PDF. The system leverages Generative AI and NLP to create adaptive quizzes aligned with Bloom's Taxonomy, ensuring a structured learning approach from basic understanding to higher-order thinking. It dynamically adjusts question difficulty based on student performance, reinforcing learning through progressively challenging assessments.",
-      image: "/placeholder.svg",
-      tech: ["Python", "NLP", "API Integration", "Generative AI", "Machine Learning"],
+        "Built an end-to-end product for automated question generation and evaluation using AI. Designed adaptive difficulty, performance tracking, and role-based dashboards, and improved learning alignment using Bloom's Taxonomy.",
+      image: unitestImage.src,
+      tech: ["Product Thinking", "Generative AI", "NLP", "Analytics", "Role-based Dashboards"],
       color: "from-purple-400 via-pink-500 to-cyan-600",
-      stats: { position: "2nd Place", exhibition: "CMRIT", year: "2025" },
-      type: "AI PROJECT",
+      stats: { impact: "2nd Place", result: "Higher Efficiency", status: "Live" },
+      type: "PRODUCT PROJECT",
       accent: "border-purple-500/50 shadow-purple-500/25",
       github: "https://github.com/theakshatkhandelwal",
-      live: "https://unittest-ai-quiz-1.onrender.com/",
+      live: "https://www.unitest.in",
     },
     {
-      title: "AUTO SPARE PARTS MANAGEMENT",
-      subtitle: "Web-Based Inventory System",
+      title: "AI-Powered Energy Recommendation System",
+      subtitle: "Data-Driven Optimization Platform",
       description:
-        "A web-based application designed to optimize the operations of an auto spare parts store by effectively managing inventory, suppliers, sales, and stock levels. The system leverages PHP for server-side functionality and MySQL for robust data storage. The frontend is crafted with HTML, CSS, Bootstrap, and jQuery, offering a responsive and user-friendly interface. This application supports secure user authentication and facilitates streamlined tracking of stock, sales, and supplier information, ensuring seamless and efficient store management.",
-      image: "/placeholder.svg",
-      tech: ["PHP", "MySQL", "HTML", "CSS", "Bootstrap", "jQuery", "XAMPP"],
+        "Developed a platform to optimize energy usage and reduce costs. Identified user pain points, translated them into product features, and built dashboards for consumption trends, scenario simulation, and ROI insights.",
+      image: energyAdvisorImage.src,
+      tech: ["Problem Framing", "Python", "SQL", "Data Visualization", "Recommendations"],
       color: "from-blue-400 via-cyan-500 to-teal-600",
-      stats: { database: "MySQL", frontend: "Bootstrap", auth: "Secure" },
-      type: "WEB APPLICATION",
+      stats: { impact: "Cost Savings", output: "Actionable Insights", mode: "Simulation" },
+      type: "PRODUCT PROJECT",
       accent: "border-cyan-500/50 shadow-cyan-500/25",
       github: "https://github.com/theakshatkhandelwal",
-      live: "https://github.com/theakshatkhandelwal",
+      live: "https://energyadvisor.vercel.app",
     },
   ]
 
   const skills = [
     {
-      name: "Python",
-      level: 85,
-      icon: Server,
+      name: "Product Thinking",
+      level: 88,
+      icon: Layers,
       color: "from-green-500 to-teal-500",
       glow: "shadow-green-500/50",
     },
     {
-      name: "Java",
-      level: 80,
-      icon: Shield,
+      name: "User Research",
+      level: 82,
+      icon: Eye,
       color: "from-orange-500 to-red-500",
       glow: "shadow-orange-500/50",
     },
     {
-      name: "C Programming",
-      level: 80,
-      icon: Code,
+      name: "Problem Framing",
+      level: 84,
+      icon: Shield,
       color: "from-blue-500 to-cyan-500",
       glow: "shadow-blue-500/50",
     },
     {
-      name: "HTML",
-      level: 85,
-      icon: Globe,
+      name: "Metrics Analysis",
+      level: 83,
+      icon: Database,
       color: "from-orange-400 to-red-500",
       glow: "shadow-orange-500/50",
     },
     {
-      name: "CSS",
-      level: 80,
+      name: "A/B Thinking",
+      level: 78,
       icon: Palette,
       color: "from-blue-400 to-purple-500",
       glow: "shadow-blue-500/50",
     },
     {
-      name: "JavaScript",
-      level: 75,
-      icon: Zap,
+      name: "Python",
+      level: 86,
+      icon: Server,
       color: "from-yellow-500 to-orange-500",
       glow: "shadow-yellow-500/50",
     },
     {
-      name: "MySQL",
-      level: 75,
+      name: "SQL",
+      level: 84,
       icon: Database,
       color: "from-blue-600 to-indigo-600",
       glow: "shadow-blue-500/50",
     },
     {
-      name: "SQL",
-      level: 70,
-      icon: Database,
+      name: "Data Visualization",
+      level: 82,
+      icon: Globe,
       color: "from-cyan-500 to-blue-600",
       glow: "shadow-cyan-500/50",
     },
     {
-      name: "Visual Studio Code",
-      level: 85,
+      name: "APIs & Backend Systems",
+      level: 80,
       icon: Code,
       color: "from-blue-500 to-purple-500",
       glow: "shadow-blue-500/50",
     },
     {
-      name: "Excel",
-      level: 80,
-      icon: Layers,
+      name: "AI/ML Fundamentals",
+      level: 78,
+      icon: Bot,
       color: "from-green-500 to-emerald-600",
       glow: "shadow-green-500/50",
     },
     {
-      name: "Eclipse",
-      level: 70,
-      icon: Bot,
+      name: "NLP & Generative AI",
+      level: 80,
+      icon: Sparkles,
+      color: "from-green-500 to-emerald-600",
+      glow: "shadow-green-500/50",
+    },
+    {
+      name: "Excel / Sheets / PowerPoint",
+      level: 84,
+      icon: Layers,
       color: "from-purple-500 to-pink-500",
       glow: "shadow-purple-500/50",
     },
     {
-      name: "GitHub",
-      level: 75,
+      name: "Git / Jupyter / VS Code",
+      level: 82,
       icon: Github,
       color: "from-gray-600 to-gray-800",
       glow: "shadow-gray-500/50",
@@ -512,8 +522,8 @@ export default function Portfolio() {
                     }}
                   >
                     <img
-                      src="/aditya_transparent.png"
-                      alt="Hi, I'm Aditya Bajaj"
+                      src={akshatImage.src}
+                      alt="Hi, I'm Akshat Khandelwal"
                       className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain mx-auto"
                       style={{
                         filter: 'drop-shadow(0 0 20px rgba(168, 85, 247, 0.3)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.1))'
@@ -583,7 +593,7 @@ export default function Portfolio() {
                       transition={{ delay: shouldReduceMotion ? 0 : 2.7, duration: 0.8 }}
                     >
                         <motion.h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
-                        {["A", "S", "P", "I", "R", "I", "N", "G", " ", "S", "O", "F", "T", "W", "A", "R", "E", " ", "D", "E", "V", "E", "L", "O", "P", "E", "R"].map((letter, index) => (
+                        {["C", "O", "M", "P", "U", "T", "E", "R", " ", "S", "C", "I", "E", "N", "C", "E", " ", "S", "T", "U", "D", "E", "N", "T"].map((letter, index) => (
                           <motion.span
                             key={index}
                             initial={{ opacity: 0 }}
@@ -603,7 +613,7 @@ export default function Portfolio() {
                       transition={{ delay: 4.4, duration: 0.8 }}
                     >
                         <motion.h2 className="text-lg md:text-xl lg:text-2xl font-bold">
-                        {["C", "O", "M", "P", "U", "T", "E", "R", " ", "S", "C", "I", "E", "N", "C", "E", " ", "E", "N", "G", "I", "N", "E", "E", "R"].map((letter, index) => (
+                        {["P", "R", "O", "D", "U", "C", "T", " ", "M", "A", "N", "A", "G", "E", "M", "E", "N", "T", " ", "A", "S", "P", "I", "R", "A", "N", "T"].map((letter, index) => (
                           <motion.span
                             key={index}
                             initial={{ opacity: 0 }}
@@ -626,14 +636,7 @@ export default function Portfolio() {
                     className="space-y-4 pt-6"
                   >
                     <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                      Aspiring to secure a dynamic role in IT as a software or web developer at a reputed organization, where I can leverage{" "}
-                      <span className="text-pink-400 font-bold">my passion for innovation</span> and{" "}
-                      <span className="text-cyan-400 font-bold">robust technical skills</span> with{" "}
-                      <span className="text-purple-400 font-bold">strong work ethic</span>. 
-                    </p>
-                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-                      With proven abilities in{" "}
-                      <span className="text-green-400 font-bold">team collaboration and leadership</span>, I am dedicated to creating impactful solutions that drive organizational success.
+                      Computer Science student interested in product management, with experience building AI-driven and data-centric projects. Focused on understanding user problems, analyzing data, and creating scalable, user-friendly solutions.
                     </p>
                   </motion.div>
                 </div>
@@ -696,10 +699,10 @@ export default function Portfolio() {
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto px-4"
           >
             {[
-              { number: "8.43", label: "CGPA Score", icon: Code, color: "text-blue-400" },
-              { number: "2+", label: "Projects Built", icon: Zap, color: "text-purple-400" },
-              { number: "4+", label: "Hackathons", icon: Globe, color: "text-violet-500" },
-              { number: "∞", label: "Learning", icon: Sparkles, color: "text-pink-400" },
+              { number: "8.49", label: "CGPA Score", icon: Code, color: "text-blue-400" },
+              { number: "2+", label: "Product Projects", icon: Zap, color: "text-purple-400" },
+              { number: "3+", label: "Hackathons", icon: Globe, color: "text-violet-500" },
+              { number: "1", label: "Internship", icon: Sparkles, color: "text-pink-400" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -771,8 +774,8 @@ export default function Portfolio() {
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 sm:mb-6 gap-3 sm:gap-0">
                   <div className="flex-1">
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">CMR Institute of Technology</h3>
-                    <p className="text-base sm:text-lg text-cyan-400 font-semibold">Bachelor of Engineering - Computer Science</p>
-                    <p className="text-xs sm:text-sm text-gray-400">CGPA: 8.43 • 2026 (Pursuing)</p>
+                    <p className="text-base sm:text-lg text-cyan-400 font-semibold">B.E. in Computer Science and Engineering</p>
+                    <p className="text-xs sm:text-sm text-gray-400">CGPA: 8.49 • 2022 - 2026</p>
                   </div>
                   <div className="text-left sm:text-right">
                     <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-green-500/20 border border-green-500/30 rounded-full">
@@ -781,11 +784,10 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-4 sm:mb-6">
-                  Pursuing Computer Science Engineering with strong focus on software development, 
-                  artificial intelligence, and web technologies. Actively involved in projects and hackathons.
+                  Strong foundation in computer science, user-centric problem solving, data analysis, and backend systems.
                 </p>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                  {["Computer Science", "Engineering", "Software Development", "AI/ML"].map((tech) => (
+                  {["Product Thinking", "Data Analysis", "Backend Systems", "AI/ML"].map((tech) => (
                     <span
                       key={tech}
                       className="px-2 sm:px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-purple-300 text-xs sm:text-sm font-medium"
@@ -848,9 +850,9 @@ export default function Portfolio() {
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <h3 className="text-3xl font-bold text-white mb-2">Incanus Technologies Pvt. Ltd.</h3>
+                    <h3 className="text-3xl font-bold text-white mb-2">Incanus Technologies (Newton School)</h3>
                     <p className="text-lg text-green-400 font-semibold">Quality Check Intern</p>
-                    <p className="text-sm text-gray-400">July 2025 - September 2025 • Bangalore, India</p>
+                    <p className="text-sm text-gray-400">Jul 2025 - Dec 2025 • Bengaluru, India</p>
                   </div>
                   <div className="text-right">
                     <div className="px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full">
@@ -860,10 +862,10 @@ export default function Portfolio() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    Selected through Newton School, reporting to Siddhant Agarwal. Conducted quality checks and assisted in testing internal tools and platforms. Ensured all deliverables adhered to internal standards before deployment.
+                    Analyzed user behavior and proctoring logs to identify misuse patterns, conducted user calls to uncover pain points, and created stakeholder reports to improve decision-making, reliability, and operational efficiency.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {["Quality Assurance", "Testing", "Newton School", "Internal Tools", "Deployment Standards"].map((tech) => (
+                    {["User Feedback", "Metrics Analysis", "Cross-Functional Collaboration", "Workflow Improvements", "Platform Integrity"].map((tech) => (
                       <span
                         key={tech}
                         className="px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full text-green-300 text-sm font-medium"
@@ -888,9 +890,9 @@ export default function Portfolio() {
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <h3 className="text-3xl font-bold text-white mb-2">Technical Expertise</h3>
-                    <p className="text-lg text-orange-400 font-semibold">Programming & Development</p>
-                    <p className="text-sm text-gray-400">Languages • Tools • Technologies</p>
+                    <h3 className="text-3xl font-bold text-white mb-2">Product & Analytics Skills</h3>
+                    <p className="text-lg text-orange-400 font-semibold">Product • Data • Technical</p>
+                    <p className="text-sm text-gray-400">Business • Analytics • Execution</p>
                   </div>
                   <div className="text-right">
                     <div className="px-4 py-2 bg-orange-500/20 border border-orange-500/30 rounded-full">
@@ -899,11 +901,10 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Proficient in multiple programming languages including Python, Java, and C. 
-                  Experienced with web technologies, databases, and development tools.
+                  Experience across product thinking, user research, metrics analysis, and technical execution for AI-powered products.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["Python", "Java", "C", "HTML/CSS", "JavaScript", "MySQL"].map((tech) => (
+                  {["Product Thinking", "User Research", "Python", "SQL", "NLP", "Generative AI"].map((tech) => (
                     <span
                       key={tech}
                       className="px-3 py-1 bg-pink-500/20 border border-pink-500/30 rounded-full text-pink-300 text-sm font-medium"
@@ -929,11 +930,10 @@ export default function Portfolio() {
             className="text-center mb-20"
           >
             <GlitchText className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              EPIC BUILDS
+              PRODUCT BUILDS
             </GlitchText>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
-              Projects that don't just work - they{" "}
-              <span className="text-pink-400 font-bold animate-pulse">DOMINATE</span> their domains 🔥
+              AI-powered and data-centric projects focused on user value and measurable outcomes.
             </p>
           </motion.div>
 
@@ -1075,11 +1075,10 @@ export default function Portfolio() {
             className="text-center mb-20"
           >
             <GlitchText className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
-              SUPERPOWERS
+              SKILLS
             </GlitchText>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
-              Technologies I've mastered to create{" "}
-              <span className="text-purple-400 font-bold animate-pulse">DIGITAL MAGIC</span> ✨
+              Product, analytics, and technical strengths for building user-friendly scalable solutions.
             </p>
           </motion.div>
 
@@ -1197,19 +1196,19 @@ export default function Portfolio() {
                       type: "Academic"
                     },
                     {
-                      title: "Top 60 - National Social Hackathon",
-                      description: "Selected among top 60 out of 500+ teams for Round 2 of National Social Hackathon",
+                      title: "Top 50/500+ - Social India Hackathon",
+                      description: "Ranked among top 50 teams out of 500+ participants",
                       type: "Competition"
                     },
                     {
-                      title: "Top 25 - HappyFox GenAI Hackathon",
-                      description: "Shortlisted among top 25 teams out of 125 for Round 2 of Generative AI HappyFox Hackathon",
+                      title: "Top 60/500+ - National Social Hackathon",
+                      description: "Selected among top 60 teams out of 500+ entries",
                       type: "AI Competition"
                     },
                     {
-                      title: "Top 60 - Nokia Recruitment",
-                      description: "Selected among top 60 out of 350+ students for Round 2 of Nokia recruitment process",
-                      type: "Career"
+                      title: "Top 25/125 - HappyFox GenAI Hackathon",
+                      description: "Shortlisted among top 25 teams out of 125",
+                      type: "Hackathon"
                     }
                   ].map((achievement, index) => (
                     <motion.div
@@ -1245,51 +1244,39 @@ export default function Portfolio() {
               viewport={{ once: true }}
             >
               <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 border-2 border-cyan-500/30 backdrop-blur-xl p-6 sm:p-8 rounded-3xl shadow-2xl shadow-cyan-500/20">
-                <h3 className="text-2xl sm:text-3xl font-black mb-6 text-white">🎯 ACTIVITIES & HOBBIES</h3>
+                <h3 className="text-2xl sm:text-3xl font-black mb-6 text-white">🎯 LEADERSHIP & ACTIVITIES</h3>
                 
-                {/* Online Courses */}
-                <div className="mb-6">
-                  <h4 className="text-lg font-bold text-cyan-400 mb-3">📚 Online Courses & Certifications</h4>
-                  <div className="space-y-2">
-                    <div className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
-                      <p className="text-white font-medium text-sm">The Complete Python Developer - UDEMY</p>
-                    </div>
-                    <div className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
-                      <p className="text-white font-medium text-sm">The Front-End Web Developer Bootcamp - UDEMY</p>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Hackathons */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-purple-400 mb-3">🚀 Hackathons Participated</h4>
+                  <h4 className="text-lg font-bold text-cyan-400 mb-3">🚀 Hackathons</h4>
                   <div className="space-y-2">
                     {[
-                      "AptiCode, 2025",
-                      "Nokia Student Hackathon, 2025",
-                      "Hackathon on GenAI conducted by HappyFox, 2025",
-                      "Social Hackathon conducted by CMRIT Bangalore, 2025"
-                    ].map((hackathon, index) => (
-                      <div key={index} className="p-3 bg-purple-500/10 border border-purple-500/20 rounded-lg">
-                        <p className="text-white font-medium text-sm">{hackathon}</p>
+                      "Smart India Hackathon",
+                      "Nokia Hackathon",
+                      "HappyFox GenAI Hackathon",
+                    ].map((event, index) => (
+                      <div key={index} className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
+                        <p className="text-white font-medium text-sm">{event}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Technical Clubs */}
+                {/* Club Activity */}
                 <div className="mb-6">
-                  <h4 className="text-lg font-bold text-green-400 mb-3">👥 Technical Clubs</h4>
-                  <div className="p-3 bg-green-500/10 border border-green-500/20 rounded-lg">
-                    <p className="text-white font-medium text-sm">Hacker Earth Club - Member of organizing team, improving coding skillset</p>
+                  <h4 className="text-lg font-bold text-purple-400 mb-3">👥 Community</h4>
+                  <div className="space-y-2">
+                    <div className="p-3 bg-purple-500/10 border border-purple-500/20 rounded-lg">
+                      <p className="text-white font-medium text-sm">Active member of HackerEarth Club, contributing to events and collaboration</p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Hobbies */}
-                <div>
-                  <h4 className="text-lg font-bold text-pink-400 mb-3">🎮 Hobbies</h4>
+                {/* Tools */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-pink-400 mb-3">🛠 Tools</h4>
                   <div className="flex flex-wrap gap-2">
-                    {["Playing Video Games", "Going to Gym", "Watching TV Shows"].map((hobby, index) => (
+                    {["Excel", "Google Sheets", "PowerPoint", "Git", "Jupyter", "VS Code"].map((hobby, index) => (
                       <span key={index} className="px-3 py-1 bg-pink-500/20 border border-pink-500/30 rounded-full text-pink-300 text-sm font-medium">
                         {hobby}
                       </span>
@@ -1313,11 +1300,10 @@ export default function Portfolio() {
             className="text-center mb-20"
           >
             <GlitchText className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 bg-gradient-to-r from-green-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              LET'S CREATE MAGIC
+              LET'S CONNECT
             </GlitchText>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
-              Ready to build something <span className="text-green-400 font-bold animate-pulse">LEGENDARY</span>? Let's
-              make it happen! 🚀
+              Open to product opportunities focused on user outcomes, experimentation, and product impact.
             </p>
           </motion.div>
 
@@ -1359,7 +1345,7 @@ export default function Portfolio() {
                     <motion.div whileHover={{ scale: 1.02 }}>
                       <Input
                         name="subject"
-                        placeholder="Project Subject"
+                        placeholder="Role or collaboration topic"
                         required
                         className="bg-black/60 border-2 border-pink-500/30 focus:border-pink-400 text-white placeholder-gray-400 rounded-xl sm:rounded-2xl py-3 sm:py-4 text-base sm:text-lg font-medium"
                       />
@@ -1367,7 +1353,7 @@ export default function Portfolio() {
                     <motion.div whileHover={{ scale: 1.02 }}>
                       <Textarea
                         name="message"
-                        placeholder="Tell me about your EPIC project idea..."
+                        placeholder="Tell me about the role or product challenge..."
                         rows={6}
                         required
                         className="bg-black/60 border-2 border-green-500/30 focus:border-green-400 text-white placeholder-gray-400 rounded-xl sm:rounded-2xl p-3 sm:p-4 text-base sm:text-lg font-medium resize-none"
@@ -1379,7 +1365,7 @@ export default function Portfolio() {
                         className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 hover:from-purple-400 hover:via-pink-400 hover:to-cyan-400 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 group py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl font-black rounded-xl sm:rounded-2xl"
                       >
                         <Send className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 group-hover:translate-x-2 transition-transform" />
-                        <span className="hidden sm:inline">LAUNCH MESSAGE 🚀</span>
+                        <span className="hidden sm:inline">SEND MESSAGE 🚀</span>
                         <span className="sm:hidden">SEND 🚀</span>
                         <Sparkles className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 group-hover:animate-spin" />
                       </Button>
@@ -1397,9 +1383,7 @@ export default function Portfolio() {
                   <div>
                     <h3 className="text-2xl sm:text-3xl font-black mb-4 sm:mb-6 text-white">LET'S CONNECT!</h3>
                     <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg">
-                      I'm always excited to collaborate on mind-blowing projects. Whether you need a scalable backend
-                      that handles millions of users or an AI system that predicts the future, let's build something
-                      LEGENDARY together!
+                      Product-focused builder with strong technical fundamentals, interested in solving user problems through data, experimentation, and clear product decisions.
                     </p>
                   </div>
 
@@ -1415,7 +1399,7 @@ export default function Portfolio() {
                       {
                         icon: Coffee,
                         label: "Location",
-                        value: "Bangalore, India",
+                        value: "Bengaluru, India",
                         color: "text-yellow-400",
                         bg: "from-yellow-500/20 to-orange-500/20",
                       },
