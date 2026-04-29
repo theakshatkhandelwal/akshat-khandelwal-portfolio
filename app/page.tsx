@@ -659,7 +659,7 @@ export default function Portfolio() {
                 size="lg"
                 className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 hover:from-pink-400 hover:via-purple-400 hover:to-cyan-400 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 group px-6 py-4 sm:px-8 sm:py-5 lg:px-10 lg:py-6 text-base sm:text-lg lg:text-xl font-black rounded-xl sm:rounded-2xl border-2 border-white/20 w-full sm:w-auto"
                 onClick={() => {
-                  window.open('https://drive.google.com/file/d/1n_5VwGe2ZizSjA4axbTDJiM0IfVZWip-/view?usp=sharing', '_blank')
+                  window.open('https://drive.google.com/file/d/1KTzYV0rXxmkOEYKot885Qk1FwzmHRtnT/view?usp=sharing', '_blank')
                 }}
               >
                 <Download className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 group-hover:animate-bounce" />
